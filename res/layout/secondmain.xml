@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.broov.player.masgb.view.SlideMenu
+        android:id="@+id/slide_menu2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/layout_menu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/titlebar2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tabSecondMainHeightSize"
+                android:background="@drawable/bg_title_bar"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/imgTitleBack2"
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_marginLeft="15dip"
+                    android:background="@drawable/slide_menu_click2"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tvTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center_vertical"
+                    android:text="菜单"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tabSecondMainFontSize" />
+
+                <TextView
+                    android:id="@+id/tvName2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="视频管理"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/tabSecondMainFontSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TabHost
+                    android:id="@android:id/tabhost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+                        </TabWidget>
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" >
+                        </FrameLayout>
+                    </LinearLayout>
+                </TabHost>
+            </LinearLayout>
+        </LinearLayout>
+    </com.broov.player.masgb.view.SlideMenu>
+
+</LinearLayout>

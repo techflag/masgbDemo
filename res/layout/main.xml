@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/offWhite"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_AVP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_title_bar"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:contentDescription="@string/imag_back"
+            android:id="@+id/searchback_AVP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ugc_back" />
+
+        <TextView
+            android:id="@+id/textView_AVP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/searchback_AVP"
+            android:text="返回"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView_AVP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/textView_AVP"
+            android:src="@drawable/ugc_vertical_line" />
+
+        <TextView
+            android:id="@+id/textView_AVP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/imageView_AVP"
+            android:text="本地学习"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/path_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/black"
+        android:maxLines="1"
+        android:text="@string/pathis"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/detail_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/black"
+        android:gravity="center"
+        android:textColor="@color/brightRed" />
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="@color/black"
+        android:longClickable="true"
+        android:smoothScrollbar="true"
+        android:text="No media file found" />
+
+</LinearLayout>

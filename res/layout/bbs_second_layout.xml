@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/llSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/titlebar"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/btnAllBBS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_login_button2"
+            android:paddingTop="2dp"
+            android:text="所有帖子"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/btnMyBBS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_login_button2"
+            android:paddingTop="2dp"
+            android:text="我的帖子"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/btnAddBBS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_login_button2"
+            android:paddingTop="2dp"
+            android:text="发表新帖"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEditBBS"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/llSelect"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_box2"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="主题:"
+                android:textSize="@dimen/bbsListFontSize"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtSendTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22dp"
+                android:layout_weight="8"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="回复:"
+                android:textSize="@dimen/bbsListFontSize"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtSendContentInSecond"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginRight="22dp"
+                android:layout_weight="8"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top"
+                android:textSize="@dimen/bbsListFontSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSendInSecond"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="发表"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnClearInSecond"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="清空"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/llSelect"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="6" >
+
+            <ListView
+                android:id="@+id/bbsSecondLV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_box2"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/bg_curriculm_line_h"
+                android:fadingEdge="none" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.3"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pageBBSBtn2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/button_normal"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="2dp"
+                android:text="1"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/upBBSBtn2"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="2dp"
+                android:text="上一页"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/nextBBSBtn2"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="2dp"
+                android:text="下一页"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/updateBBSBT2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="2dp"
+                android:text="刷 新"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

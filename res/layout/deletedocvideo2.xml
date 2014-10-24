@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="6" >
+
+            <ListView
+                android:id="@+id/fileLv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_box2"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/bg_curriculm_line_h"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="true"
+                android:listSelector="#00000000" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.3"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pageDeleteDocBtn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/button_normal"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="1"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/upDeleteDocBtn"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="上一页"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/nextDeleteDocBtn"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="下一页"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tvReplyName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:ellipsize="end"
+        android:gravity="center_vertical|center_horizontal"
+        android:singleLine="true"
+        android:textSize="@dimen/bbsListFontSize"
+        android:text="姓名/回复时间"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_curriculm_line_v" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/tvReplyContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:text="回复内容"
+        android:textSize="@dimen/bbsListFontSize"
+        android:textStyle="bold" />
+
+</LinearLayout>

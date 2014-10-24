@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/broov/player/masgb/ui/VideoPlayerOnLineActivity.java" />
+        <ignore path="src/com/broov/player/masgb/ui/VideoPlayerActivity.java" />
+        <ignore path="src/com/broov/player/masgb/ui/VideoPlayerOffLineActivity.java" />
+    </issue>
+</lint>

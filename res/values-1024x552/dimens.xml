@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tvTitle_main">32dip</dimen>
+    <dimen name="tvName_main">32dip</dimen> 
+    <dimen name="titlebar_main">42dp</dimen> 
+    
+    <dimen name="courseHeadFontSize">22dip</dimen> 
+    
+    <dimen name="tabCourseFontSize">32dip</dimen> <!-- 在学课程 -->
+    <dimen name="tabCourseHeightSize">40dp</dimen> <!-- 在学课程 -->
+    
+    <dimen name="courseListFontSize">25dip</dimen> <!-- 在学课程 -->
+    <dimen name="selectCourseHeadFontSize">20dip</dimen> <!-- 选课中心的搜索 -->
+    
+    <dimen name="menuHeadFontSize">30dip</dimen> <!--  -->
+    <dimen name="menuFontSize">24dip</dimen> <!--  -->
+    
+    <dimen name="couseDocHead">32dip</dimen> <!-- 课件列表头部 -->
+    <dimen name="courseDocListFontSize">25dip</dimen> <!-- 在学课程 -->
+    <dimen name="secondMainHead">32dip</dimen> <!-- 课件列表头部 -->
+    
+    <dimen name="tabSecondMainFontSize">32dip</dimen> <!-- 视频列表 -->
+    <dimen name="tabSecondMainHeightSize">42dp</dimen> <!-- 视频列表 -->
+    <dimen name="secondViedoListFontSize">25dip</dimen> <!-- 视频列表 -->
+    <dimen name="secondViedoHeadFontSize">17dip</dimen> <!-- 视频列表头部 -->
+    
+    
+     <dimen name="downViedoHeadFontSize">25dip</dimen> <!-- 视频下载列表头部 -->
+     <dimen name="downViedoListFontSize">25dip</dimen> <!-- 视频下载列表 -->
+     
+     
+     <dimen name="bbsHeadFontSize">32dip</dimen> 
+    <dimen name="tabBbsFontSize">25dip</dimen> 
+    <dimen name="tabBbsHeightSize">42dp</dimen> 
+    <dimen name="bbsListFontSize">25dip</dimen> 
+    <dimen name="bbsReplayListHeight">390dp</dimen> 
+    
+</resources>

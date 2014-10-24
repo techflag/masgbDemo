@@ -1,0 +1,329 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/lltitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/titlebar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llBBSListDetailOrig"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvBBSListDetailOrig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="帖 子 内 容"
+                android:textSize="@dimen/bbsListFontSize"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/Unreply_img_01"
+                android:layout_width="match_parent"
+                android:layout_height="4dip"
+                android:textSize="@dimen/bbsListFontSize"
+                android:background="@drawable/second_menub_press"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/Message_vertical_line_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_vertical_title" />
+
+        <LinearLayout
+            android:id="@+id/llBBSListDetailReply"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvBBSListDetailReply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已 回 复"
+                android:textSize="@dimen/bbsListFontSize"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/Reply_img_01"
+                android:layout_width="match_parent"
+                android:layout_height="4dip"
+                android:textSize="@dimen/bbsListFontSize"
+                android:background="@drawable/second_menub_press"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/Message_vertical_line_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_vertical_title" />
+
+        <LinearLayout
+            android:id="@+id/llBBSListDetailSend"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvBBSListDetailSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="写 回 复"
+                android:textSize="@dimen/bbsListFontSize"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/Send_img_01"
+                android:layout_width="match_parent"
+                android:layout_height="4dip"
+                android:textSize="@dimen/bbsListFontSize"
+                android:background="@drawable/second_menub_press"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/lltitle"
+        android:background="@drawable/h_line" />
+
+    <LinearLayout
+        android:id="@+id/llLvBBSListDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lltitle"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lvBBSListDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bbsReplayListHeight"
+            android:background="@drawable/bg_box2"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/bg_curriculm_line_h"
+            android:listSelector="#00000000" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_horizontal|center_vertical" >
+
+            <Button
+                android:id="@+id/pageReplyBtn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/button_normal"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="2dp"
+                android:text="1"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/upReplyBtn"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="2dp"
+                android:text="上一页"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/nextReplyBtn"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingTop="2dp"
+                android:text="下一页"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLvBBSListDetailOrig"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lltitle"
+        android:background="@drawable/bg_box2"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tvTitleInDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="标题"
+            android:textSize="@dimen/bbsListFontSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvNameInDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="@dimen/bbsListFontSize" />
+
+            <TextView
+                android:id="@+id/tvNameInDetailData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:paddingBottom="1dp"
+                android:textSize="@dimen/bbsListFontSize"
+                android:singleLine="true"
+                android:textColor="#666666" />
+        </LinearLayout>
+        <!--
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background="@drawable/bg_curriculm_line_h" />        -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fadingEdge="none" >
+
+            <TextView
+                android:id="@+id/tvContentInDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="top"
+                android:textSize="@dimen/bbsListFontSize" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSendBBSContent"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lltitle"
+        android:background="@drawable/bg_box2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="主题:"
+               android:textSize="@dimen/bbsListFontSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSendTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="22dp"
+                android:layout_weight="8"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="主题11212112121"
+                android:textSize="@dimen/bbsListFontSize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="回复:"
+                android:textSize="@dimen/bbsListFontSize"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtSendContent"
+                android:layout_width="0dp"
+                android:layout_height="175dp"
+                android:layout_marginRight="22dp"
+                android:layout_weight="8"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top"
+                android:textSize="@dimen/bbsListFontSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="发表"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="清空"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dip"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bitmap_book_read_chapterlist_repeat"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff313131"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:text="学习菜单"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/menuHeadFontSize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLearning"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/slide_menu_collaction"
+        android:drawablePadding="1.0dip"
+        android:drawableRight="@drawable/main_other_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="我的课程"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/menuFontSize" />
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:id="@+id/tvSpecialTopic"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/slide_menu_collaction"
+        android:drawablePadding="1.0dip"
+        android:drawableRight="@drawable/main_other_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="专题学习"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/menuFontSize"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvDeleteVideo"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/slide_menu_collaction"
+        android:drawablePadding="1.0dip"
+        android:drawableRight="@drawable/main_other_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="视频管理"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/menuFontSize" />
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+    <TextView
+        android:id="@+id/tvPlan"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/slide_menu_collaction"
+        android:drawablePadding="1.0dip"
+        android:drawableRight="@drawable/main_other_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="学习计划"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/menuFontSize"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvBBS"
+        android:layout_width="240dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/selector_category_item"
+        android:clickable="true"
+        android:drawableLeft="@drawable/slide_menu_collaction"
+        android:drawablePadding="1.0dip"
+        android:drawableRight="@drawable/main_other_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="马鞍山发展论坛"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/menuFontSize" />
+
+    <View
+        android:layout_width="240dip"
+        android:layout_height="2.0dip"
+        android:background="@drawable/ic_shelf_category_divider" />
+
+</LinearLayout>

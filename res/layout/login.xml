@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_edit_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/usernameET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:hint="请输入帐号..."
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pwdET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:hint="请输入密码..."
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/ipET"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_bg"
+            android:hint="测试IP地址..."
+            android:singleLine="true"
+            android:text="61.191.180.3"
+            android:visibility="gone" />
+        <!--
+        61.191.180.3
+        10.20.34.220
+        192.168.194.129        -->
+
+        <Button
+            android:paddingBottom="20dip"
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_total"
+            android:text="登     入"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
